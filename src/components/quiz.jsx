@@ -11,6 +11,10 @@ function Quiz() {
     const [bg4,setbg4]=useState(`bg-purple-500`)
 
     const [count,setcount]= useState(0)
+    useEffect(()=>{
+        if(count>20)
+            setcount(20)
+    },[count])
     const subclick = () =>{
         setmessage(`correct answer is ${count} out of ${question.length}`)
     }
@@ -104,7 +108,7 @@ const btn4click = ()=>{
             </div>
             <footer className='fixed bottom-0 right-0 sm:w-full md:w-1/2 lg:w-1/3 p-7 flex justify-between'>
                 <button onClick={subclick} className='sm:w-1/4 md:w-/4 lg:w-1/6 cursor-pointer hover: shadow-black shadow-xl rounded-2xl p-2 bg-amber-400'>submit</button>
-                <button onClick={prevclick} className='cursor-pointer hover: shadow-black shadow-xl rounded-2xl p-2 bg-blue-600'>previous questin</button>
+                <button onClick={prevclick} className='cursor-pointer hover: shadow-black shadow-xl rounded-2xl p-2 bg-blue-600'>prev question</button>
                 <button onClick={nextclick} className='cursor-pointer shadow-black shadow-xl rounded-2xl p-2 bg-green-500'>next question</button>
             </footer>
         </div>
