@@ -33,8 +33,8 @@ function Todo() {
     }
   return (
     <>
-    <div className='bg-[url(https://wallpapers.com/images/hd/black-texture-waves-pattern-60jiov04jtd4ihov.jpg)] lg:w-1/2 w-4/5 sm:w-4/5 md:w-2/3 md:h-3/4 h-1/2 sm:h-1/2 lg:h-[450px] overflow-auto bg-white rounded-2xl'>
-        <div className='text-black text-3xl italic font-bold  p-2 mt-4 text-center'>Todo App</div>
+    <div className='bg-[url(https://wallpapers.com/images/hd/black-texture-waves-pattern-60jiov04jtd4ihov.jpg)] lg:w-1/2 w-6/7 sm:w-5/6 md:w-2/3 md:h-3/4 h-2/3 sm:h-2/3 lg:h-[450px] overflow-auto rounded-2xl'>
+        <div className='text-white text-3xl italic font-bold  p-2 mt-4 text-center'>Todo App</div>
       <input value={text} onChange={handlechange}  className='rounded-xl border-white border-2 p-2 w-full text-white' placeholder='Enter a task'></input>
     <button onClick={addtask} className='w-full mt-2 p-2 bg-cyan-400 rounded-2xl' >{addone}</button>
     {
